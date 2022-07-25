@@ -1,0 +1,350 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+.heder {
+  background-color: #000000;
+  color: whitesmoke;
+  width: auto;
+  text-align: center;
+  /* border-radius: 0 0 2rem 2rem; */
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: "Grape Nuts";
+  font-size: 5rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Grape Nuts";
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  margin: .5rem;
+}
+
+
+.slogan {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.barra-navegacion {
+  margin-top: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+.main-menu {
+  display: inline-flex;
+  background-color: rgb(253, 234, 255);
+  width: auto;
+  list-style-type: none;
+  text-align: center;
+  padding: auto;
+  border-radius: 1rem;
+}
+
+.main-menu > li {
+  width: 12rem;
+  display: block;
+  margin: 0;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: auto;
+}
+
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+li:active,
+li:hover {
+  background-color: #ffb9ff;
+  transition: background-color 0.25s;
+}
+
+#primer-li:active,
+#primer-li:hover {
+  background-color: #ffb9ff;
+  border-radius: 1rem 0 0 1rem;
+  transition: background-color 0.25s;
+}
+
+#ultimo-li:active,
+#ultimo-li:hover {
+  background-color: #ffb9ff;
+  border-radius: 0 1rem 1rem 0;
+  transition: background-color 0.25s;
+}
+
+a:active,
+a:hover {
+  color: white;
+}
+
+.pie-pagina {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgb(196, 255, 245);
+}
+
+.pie-pagina p {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+#logo-facebook {
+  margin: 0;
+  width: 20px;
+}
+
+
+
+
+.boton-comprar {
+  width: 110px;
+  color: #fff;
+  background-color: black;
+  text-align: center;
+  padding: 4px;
+  border-radius: 2rem;
+  grid-area: boton;
+}
+
+.boton-comprar:active,
+.boton-comprar:hover {
+  background-color: #69811f;
+  color: #ffff;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro,
+.cinco,
+.seis{
+  border: solid 1px black;
+}
+
+.menu-compra {
+  display: flex;
+  background-color: white;
+  border-radius: 2rem;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.unidades {
+  width: 40px;
+}
+
+img {
+  width: auto;
+}
+
+/* tablets*/
+
+@media (max-width: 769px){
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+    margin: .5rem;
+  }
+
+  .main-menu {
+    display: inline-flex;
+    background-color: rgb(253, 234, 255);
+    width: auto;
+    list-style-type: none;
+    text-align: center;
+    padding: auto;
+    border-radius: 1rem;
+  }
+  
+  .main-menu > li {
+    width: 12rem;
+    display: block;
+    margin: 0;
+    padding: .9rem .9rem;
+    text-align: center;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .foto-nosotras {
+    display: none;
+  }
+
+}
+
+
+
+
+/* Celulares */
+
+@media (max-width: 576px) {
+  .heder {
+    background-color: #000000;
+    color: whitesmoke;
+    width: 100vw;
+    text-align: center;
+    height: 20vh;
+    padding: 1rem;
+  }
+    
+  h1 {
+    font-family: "Grape Nuts";
+    font-size: 3rem;
+    /* margin: 0; */
+  }
+  
+  h3 {
+    font-family: "Grape Nuts";
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      ".";
+    margin: .5rem;
+  }
+
+  .main-menu {
+    display: inline-flex;
+    background-color: rgb(253, 234, 255);
+    width: auto;
+    list-style-type: none;
+    text-align: center;
+    padding: auto;
+    border-radius: 1rem;
+  }
+  
+  .main-menu > li {
+    width: 12rem;
+    display: block;
+    margin: 0;
+    padding: .9rem .9rem;
+    text-align: center;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .container div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .barra-navegacion {
+    display: flex;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    padding: auto;
+    margin: auto;
+    width: 80vw;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin: .2rem;
+    padding: .1rem .5rem;
+  }
+
+  .ofertas {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+
+/* sobre nosotras */
+
+.foto-nosotras {
+  width: 400px;
+  height: auto;
+}
+
+.conteiner-about {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.formulario {
+  margin: 1rem;
+  padding: 1rem .5rem;
+  background-color: white;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.ofertas {
+  margin: .5rem;
+  padding: 1rem;
+}
+
+iframe {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+}
