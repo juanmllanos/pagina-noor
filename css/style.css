@@ -310,6 +310,9 @@ img {
     align-items: center;
   }
 
+  iframe {
+    width: 90vw;
+  }
 }
 
 
